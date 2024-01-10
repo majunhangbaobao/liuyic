@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=" UTF-8"/>
+	<title>Document</title>
+	<style type="text/css">
+		html,body{
+			background-image: url(https://ts1.cn.mm.bing.net/th/id/R-C.ba20c8e168e5d20f6b79c3f42fd82161?rik=ceCJ95JqZQItLA&riu=http%3a%2f%2fpic.lvmama.com%2fuploads%2fpc%2fplace2%2f2019-04-11%2f691b38b1-318e-4d8b-b5a8-b3969b87ef16.jpg&ehk=sgHBz%2fztdc9gaM%2f4CwdIFlVOWtA7B1IuIo95L4TJGAY%3d&risl=&pid=ImgRaw&r=0);
+		}
+		#content{
+			width: 500px;
+			height:350px;
+			position:relative;
+			overflow:hidden;
+			left:580px;
+			top:100px;
+		}
+	
+		#content img{
+					position: absolute;
+					width: 500px;
+					transition: all 3s ease;
+					cursor: pointer;
+		}
+		#imgOne{
+			left: 0px;
+		}
+			
+		#imgTwo{
+			left:-500px;
+		}
+		
+		 .menu{
+		        border:3px solid #000000;
+		      	width:700px;
+		      	height:200px;
+		      	margin:100px auto 0px auto;
+		      	border-top-left-radius:20px;
+		      	border-top-right-radius:20px;
+		      	overflow:hidden;
+				background-color: #F8FFF5;
+		      }
+		      .menu_title{
+		      	background-color:#F8FFF5;
+		        width:100%;
+		      	line-height:50px;
+		      	padding-left:5px;
+		      	font-weight:bold;
+		      }
+		
+	</style>
+	<script type="text/javascript">
+				function showImg(){
+					document.getElementById('imgOne').style.left="500px";
+					document.getElementById('imgTwo').style.left="0px";
+		
+				}
+		
+				function hideImg(){
+					document.getElementById('imgOne').style.left="0px";
+					document.getElementById('imgTwo').style.left="-500px";
+				}
+				
+				</script>
+</head>
+
+<a href ="https://majunhangbaobao.github.io/liuyicong/" target ="_blank">
+				<button>下一页</button>
+				</a>
+<body>
+	<div id="content">
+		<img onmousemove="showImg()" id="imgOne" src="http://ywhz.hangzhou.com.cn/yjls/images/2016-06/22/0023aea5a95c19014cac3a.jpg">
+		<img onmouseout="showImg()" id="imgTwo" src="http://ywhz.hangzhou.com.cn/cxcy/images/2016-06/20/001aa02787381912850a43.jpg">
+		</div>
+	<div class="menu">
+	      <div class="menu_title">在很多人的心中，杭州是一个古色古香的江南小城。到处是充满了历史痕迹的院落。但其实现如今的杭州，无数的现代化建筑已经随着科技发展在这个充满历史底蕴的城市拔地而起。
+		  同时许多的科技公司也在杭州成立。现如今，杭州已经成为了如今中国极其重要的互联网中心之一。</div>
+	    </div>
+		
+			
+		
+</body>
+</html>
